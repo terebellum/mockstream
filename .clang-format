@@ -1,0 +1,17 @@
+BasedOnStyle: Chromium
+IndentWidth: 4
+AccessModifierOffset: -4
+PointerAlignment: Right
+IncludeBlocks: Regroup
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+ColumnLimit: 120
+
+AlignAfterOpenBracket: BlockIndent
+QualifierAlignment: Left
+SeparateDefinitionBlocks: Always
+EmptyLineAfterAccessModifier: Never
+
+InsertBraces: true
