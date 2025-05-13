@@ -1,5 +1,7 @@
 # mockstream
 
+[![Release](https://img.shields.io/github/release/terebellum/mockstream.svg)](https://github.com/terebellum/mockstream/releases/latest)
+
 A C++ advanced stream simulation library that brings your test environment closer to production by approximating data flows with math.
 
 It tells **how much** data to send and **when** to send it to pass for the real thing.
