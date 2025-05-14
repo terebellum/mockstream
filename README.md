@@ -105,7 +105,7 @@ Clone mockstream repo and specify path to it in your cmake
     add_subdirectory(lib/mockstream)
 ```
 
-### 2 Way: Unstall and use find_package
+### 2 Way: Install and use find_package
 
 ```bash
     cd /path/to/mockstream
