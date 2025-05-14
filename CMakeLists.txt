@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.23)
 
 project(
     mockstream
-    VERSION 0.1.0
+    VERSION 0.1.1
     LANGUAGES CXX
 ) 
 message(STATUS "Build mockstream ${PROJECT_VERSION}")
@@ -36,6 +36,12 @@ target_include_directories(
 )
 
 target_compile_features(mockstream_mockstream INTERFACE cxx_std_17)
+
+# ---------------------------------------------------------------------------------------
+# Install rules
+# ---------------------------------------------------------------------------------------
+
+include (cmake/install-rules.cmake)
 
 # ---------------------------------------------------------------------------------------
 # Tests

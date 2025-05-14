@@ -88,4 +88,47 @@ int main() {
 * CMake (optional)
 
 ## Installation
-It is a header-only library, you can just copy it into your project, install using cmake, or add_subdirectory using cmake.
+It is a header-only library, you can just copy `include` folder into your project. 
+
+There are also differnet ways of installation using cmake. Library provides `mockstream::mockstream` library, just link it to your target:
+```cmake
+    target_link_libraries(main PRIVATE mockstream::mockstream)
+```
+
+Let's say you cloned mockstream repo:
+
+### 1 Way: Using add_subdirectory
+
+Clone mockstream repo and specify path to it in your cmake
+
+```cmake
+    add_subdirectory(lib/mockstream)
+```
+
+### 2 Way: Unstall and use find_package
+
+```bash
+    cd /path/to/mockstream
+    mkdir build
+    cmake ..
+    sudo make install
+```
+
+In your cmake
+```cmake
+    find_package(mockstream)
+```
+
+
+### 3 Way: Using Fetchcontent
+
+Just add to your cmake:
+```
+include(FetchContent)
+
+FetchContent_Declare(mockstream
+                     GIT_REPOSITORY https://github.com/terebellum/mockstream
+                     GIT_TAG        v0.1.0) # find right version in releases tab
+                    
+FetchContent_MakeAvailable(mockstream)
+```
